@@ -1,0 +1,10 @@
+[2025-05-10 09:05:44] user002 received 100.00 from user001
+[2025-05-10 09:06:00] user002 received 120.00 from user001
+[2025-05-10 10:03:23] user002 transferred 990.00 to user001
+[2025-05-10 10:15:56] user002 balance inquiry 110.00
+[2025-05-10 10:25:43] user002 received 120.00 from user003
+[2025-05-10 12:38:31] user002 received 150.00 from user003
+[2025-05-10 23:45:32] user002 received 150.00 from user003
+[2025-05-10 23:55:32] user002 withdrew 50
+[2025-05-11 10:00:31] user002 balance inquiry 210.00
+[2025-06-04 18:54:27] user002 final balance -400.00
