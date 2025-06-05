@@ -43,7 +43,7 @@ public class TransactionsLogProcessor {
         String user;
         String op;
         double amount;
-        String target;        // может быть null
+        String target;        // Может быть null
         String originalLine;  // "[2025-05-10 09:05:44] user001 transferred 100.00 to user002"
 
         Entry(LocalDateTime timestamp, String user, String op, double amount, String target, String originalLine) {
@@ -116,7 +116,7 @@ public class TransactionsLogProcessor {
 
                     // Получатель
                     balances.put(e.target, balances.getOrDefault(e.target, 0.0) + e.amount);
-                    // Формируем строку «… received X from Y»
+                    // Формируем строку «. . . received X from Y»
                     String receivedLine = String.format(
                             Locale.US,
                             "[%s] %s received %.2f from %s",
@@ -147,7 +147,7 @@ public class TransactionsLogProcessor {
                         writer.write(ln);
                         writer.newLine();
                     }
-                    // И в конце — финальный баланс
+                    // Финальный баланс
                     String finalLine = String.format(Locale.US,
                             "[%s] %s final balance %.2f",
                             FORMATTER.format(LocalDateTime.now()),
